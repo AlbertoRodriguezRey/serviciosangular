@@ -1,0 +1,12 @@
+<div class="coches-grid">
+    @for (car of coches; track car) {
+        <div class="card">
+            <img [src]="car.imagen" [alt]="car.marca + ' ' + car.modelo">
+            <div class="card-body">
+                <h5 class="card-title">{{car.marca}} {{car.modelo}}</h5>
+                <h6 class="card-subtitle mb-2">Modelo: {{car.modelo}}</h6>
+                <p class="card-text">Conductor: {{car.conductor}}</p>
+            </div>
+        </div>
+    }
+</div>
