@@ -1,0 +1,13 @@
+<div>
+    <h1>Api standalone True</h1>
+    <ul class="list-group">
+        @if (personas.length > 0) {
+            @for (persona of personas; track persona) {
+                <li class="list-group-item">
+                {{ persona.Nombre }} - {{ persona.Email }}
+                </li>
+            }
+        }
+
+    </ul>
+</div>

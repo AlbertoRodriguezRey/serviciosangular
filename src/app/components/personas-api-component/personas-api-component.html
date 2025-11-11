@@ -1,0 +1,8 @@
+<div>
+    <h1>Api standalone False</h1>
+    <ul class="list-group" *ngIf="personas.length > 0">
+        <li class="list-group-item" *ngFor="let persona of personas">
+            {{ persona.Nombre }} - {{ persona.Email }}
+        </li>
+    </ul>
+</div>
